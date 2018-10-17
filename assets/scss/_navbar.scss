@@ -1,0 +1,160 @@
+header{
+  .navigation-header{
+    
+    .topbar{
+      background-color: $primary;
+      .nav-link{
+        color:$white;
+        &:hover{
+          color:lighten($primary, 40%);
+        }
+      }
+      .menu{
+      }
+      .social{
+        .nav-link{
+          padding: .5rem .5rem;
+          @include transition-all();
+          &:hover{
+            transform: scale(1.2, 1.2);
+          }
+        }
+      }
+      .tel{
+      }
+    }
+    .navigation{
+      background-color: rgba($white,.77);
+      @include sombra(0px 0px 5px 0px rgba(0,0,0,0.55));
+      .logo{
+        img{
+          max-height: 55px;
+        }
+      }
+      .nav{
+        .nav-item{
+          padding: 20px 0;
+        }
+        .nav-link{
+          text-transform: uppercase;
+          border-bottom: 1px solid transparent;
+          color:$black;
+          &:hover{
+            color: $primary;
+            border-bottom: 1px solid $primary;
+          }
+        }
+      }
+      .btn-right{
+        position: relative;
+        padding: 20px;
+        margin-left: 20px;
+        & *{z-index: 2;}
+        p{font-weight: 700; color:$primary; line-height: 1.2;}
+        &:after{
+          content: '';
+          position: absolute; top: 2px; left:0px; right:-20px; bottom: 0;
+          transform: skewX(-20deg);
+          background-color: $white;
+          z-index: 1;
+          @include sombra(0px 0px 5px 0px rgba(0,0,0,0.55));
+          @include transition-all();
+        }
+        &:hover{
+          p{color:lighten($primary, 20%)}
+          &:after{background-color: $gray-200;}
+        }
+      }
+      .desplegable-mega{
+        .submenu{
+          margin-top: 15px;
+          display: none; opacity: 0;
+          width: 100%;
+          position: absolute; left:0;
+          @include transition-all(); 
+          .titulo{
+            padding: 15px 20px;
+            a{color:$white; &:hover{ color:lighten($primary, 40%)}}
+          }
+          .caption{
+            padding: 15px 20px;
+            .nav{
+              height: 170px;
+              overflow-y: scroll;
+              .nav-item{
+                padding: 2px 0;
+                a{color:$white; &:hover{ color:lighten($primary, 40%)}}
+              }
+            }
+            .vermas-arrow span{color:$white;}
+          }
+          .col-12:first-child .titulo{background-color: #294634}
+          .col-12:nth-child(2) .titulo{background-color: #224c14}
+          .col-12:nth-child(3) .titulo{background-color: #294634}
+          .col-12:nth-child(4) .titulo{background-color: #224c14}
+
+          .col-12:first-child .caption{background-color: #2f6040}
+          .col-12:nth-child(2) .caption{background-color: #225b0c}
+          .col-12:nth-child(3) .caption{background-color: #2f6040}
+          .col-12:nth-child(4) .caption{background-color: #225b0c}
+        }
+        &:hover{
+          .submenu{
+            display: block;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .bars-toggler{
+    position: fixed; top:2px; right:2px; font-size: 20px;
+    height: 50px; width: 50px;
+    background: $gray-900; padding: 15px 20px; border-radius: 3px;
+    display: none; z-index: 99999; color:$white;
+    .fa-bars, .fa-times{
+      position: absolute; top:50%; left:50%;
+      transform: translate(-50%, -50%);
+    }
+    &.activo .fa-bars{display: none;}
+    &.activo .fa-times{display: block;}
+    .fa-times{display: none;}
+  }
+  @media (max-width: 991px) {
+    .bars-toggler{
+      display: block;
+    }
+    .navigation-header{
+      display: none;
+      width: 100vw; height: 100vh;
+      background-color: rgba($white, .9);
+      .topbar{
+        margin-top: 52px;
+        background-color: $black;
+        text-align: center;
+        .menu{
+          .nav-link{
+            padding: .5rem;
+          }
+        }
+      }
+      .navigation{
+        width: 100%;
+        height: calc(100% - 132px);
+        background-color: transparent;
+        overflow-y: scroll;
+        .container-fluid, .row{height: 100%;}
+        .logo{display: block; width: 100%; margin-top: 10px; text-align: center;}
+        .nav{
+          width: 100%;
+          flex-flow: column;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .btn-right{
+          margin: auto auto 0 auto;
+        }
+      }
+    }
+  }
+}
