@@ -314,6 +314,43 @@ footer .copyright p {
   color: #000;
 }
 
+#banner-interno {
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+#banner-interno img.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+}
+
+.galeria .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.galeria .item:hover:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  content: '\f002';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header .navigation-header .topbar {
   background-color: #294634;
 }
@@ -1133,4 +1170,57 @@ header .bars-toggler .fa-times {
 
 #inmuebles-list .navegador a:hover {
   color: #294634;
+}
+
+#inmueble {
+  padding: 0;
+}
+
+#inmueble .tab-main {
+  justify-content: center;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+#inmueble .tab-main .nav-link {
+  color: #495057;
+  padding: .8rem 1rem;
+  border-top: 1px solid #e9ecef;
+  border-left: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+
+#inmueble .tab-main .nav-link:hover, #inmueble .tab-main .nav-link.active {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 992px) {
+  #inmueble .tab-main .nav-link {
+    padding: .8rem .5rem;
+  }
+}
+
+#inmueble .tab-content {
+  background-color: #e9ecef;
+}
+
+#inmueble .lista .nav {
+  height: 250px;
+}
+
+#inmueble .lista .nav li {
+  padding: 8px 8px  8px 20px;
+  position: relative;
+}
+
+#inmueble .lista .nav li:before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: '\f00c';
+  color: #294634;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }

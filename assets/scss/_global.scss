@@ -217,3 +217,26 @@ footer{
     p{font-size: 10px; color:$black;}
   }
 }
+//Internos
+#banner-interno{
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  img.img{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    min-width: 100%; min-height: 100%; max-width: none; 
+  }
+}
+.galeria{
+  .item{
+    position: relative;
+    cursor: pointer;
+    &:hover:after{
+      position: absolute; top: 0; right:0; left:0; bottom:0;
+      background: rgba($black, .8); color:$white;
+      content: '\f002';
+      font-family: 'Font Awesome 5 Free'; font-weight: 900;
+      display: flex; justify-content: center; align-items: center;
+    }
+  }
+}
