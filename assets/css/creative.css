@@ -1351,3 +1351,78 @@ header .bars-toggler .fa-times {
 #inmueble .sidebar form .share a {
   padding: 0 8px;
 }
+
+#contact {
+  position: relative;
+  padding: 0;
+}
+
+#contact .mapa {
+  height: 800px;
+  width: 100%;
+}
+
+#contact .sidebar {
+  width: 360px;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#contact .sidebar h4 {
+  color: #294634;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#contact .sidebar form {
+  padding-top: 30px;
+}
+
+#contact .sidebar form input {
+  border: 1px solid #868e96;
+  color: #495057;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+#contact .sidebar form input[type="submit"] {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #294634;
+  background-color: #294634;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#contact .sidebar form input[type="submit"]:hover {
+  background-color: #4f8664;
+}
+
+#contact .sidebar form .btn {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+#contact .sidebar form .share {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contact .sidebar form .share a {
+  padding: 0 8px;
+}
+
+@media (max-width: 991px) {
+  #contact .sidebar {
+    position: relative;
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+#contact{
+    position: relative;
+    padding: 0;
+    .mapa{
+        height: 800px; width: 100%;
+    }
+    .sidebar{
+        width: 360px;
+        position: absolute; bottom: 20px; right: 40px;
+        padding: 20px; background-color: $white; border-radius: 5px;
+        h4{color:$primary; font-size: 18px; font-weight: 700;}
+        form{
+            padding-top: 30px;
+            
+            input{
+                border:1px solid $gray-600;
+                color: $gray-700;
+                padding: 10px 15px;
+                width: 100%;
+            }
+            input[type="submit"]{
+                text-align: center; font-weight: 700; color:$white;
+                border:1px solid $primary;
+                background-color: $primary; cursor: pointer;
+                @include transition-all();
+                &:hover{ background-color: lighten($primary, 20%);}
+            }
+            .btn{width:100%;padding: 10px 15px;}
+            .share{
+                display: flex; flex-wrap: wrap; justify-content: center;
+                a{padding: 0 8px;}
+            }
+        }
+        @media (max-width: 991px) {
+            position: relative; 
+            width: 100%;
+        }
+    }
+}
