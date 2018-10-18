@@ -55,6 +55,10 @@ img {
   background-color: #294634 !important;
 }
 
+.primary {
+  color: #294634;
+}
+
 .bg-dark {
   background-color: #212529 !important;
 }
@@ -510,6 +514,41 @@ footer .copyright p {
 
 #unite-al-equipo form .form-container a:hover {
   color: #4f8664;
+}
+
+input, select, textarea {
+  border: 1px solid #868e96;
+  color: #495057;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #294634;
+  background-color: #294634;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #4f8664;
+}
+
+.vendeBien {
+  background-color: #495057;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.vendeBien * {
+  margin-bottom: 0;
 }
 
 header .navigation-header .topbar {
