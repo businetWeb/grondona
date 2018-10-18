@@ -60,7 +60,9 @@ $(window).on('load', function(){
     $( ".amount" ).val( "$" + $( ".slider-range" ).slider( "values", 0 ) +
     " - $" + $( ".slider-range" ).slider( "values", 1 ) );
 
-
+    $('#galeria').lightGallery({
+        thumbnail: true,
+    }); 
     //Sliders  
     $('.emprendimientos-slick').slick({
         infinite: true,

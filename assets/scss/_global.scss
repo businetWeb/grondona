@@ -228,15 +228,26 @@ footer{
   }
 }
 .galeria{
-  .item{
+  display: flex; flex-wrap: wrap;
+  a{
+    flex-basis: 22%;
+    max-width: 22%;
     position: relative;
+    box-sizing: content-box;
+    margin-right: 1%;
+    margin-bottom: 10px;
     cursor: pointer;
+    &:last-child{margin-right: 0;}
     &:hover:after{
       position: absolute; top: 0; right:0; left:0; bottom:0;
       background: rgba($black, .8); color:$white;
       content: '\f002';
       font-family: 'Font Awesome 5 Free'; font-weight: 900;
       display: flex; justify-content: center; align-items: center;
+    }
+    @media (max-width: 991px) {
+      flex-basis: 100%;
+      max-width: 100%;
     }
   }
 }

@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
         <link rel="stylesheet" href="./assets/vendors/jquery-ui/jquery-ui.min.css">
         <link rel="stylesheet" href="./assets/vendors/jquery-ui/jquery-ui.theme.min.css">
+        <link rel="stylesheet" href="./assets/vendors/lightgallery/css/lightgallery.min.css">
         <link rel="stylesheet" href="./assets/css/creative.min.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     </head>
@@ -214,10 +215,10 @@
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="container py-4">
-                        <div class="row">
-                            <div class="col-12 col-lg-8">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <h3>Casa en Venta en El Portal</h3>
                                 <p class="location"><i class="fas fa-map-marker-alt"></i> Av de los lagos  6855 piso 10, El portal, nordelta</p>
                                 <p class="text-justify mb-5">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -242,42 +243,98 @@
                                     </ul>
                                 </div>
                                 <h5><b>Planos:</b></h5>
-                                <div class="galeria mb-5">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-3">
-                                            <div class="item">
-                                                <img src="./assets/img/img3.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <div class="item">
-                                                <img src="./assets/img/img3.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <div class="item">
-                                                <img src="./assets/img/img3.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <div class="item">
-                                                <img src="./assets/img/img3.jpg">
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div id="galeria" class="galeria mb-5">
+                                    <a href="./assets/img/img3.jpg">
+                                        <img src="./assets/img/img3.jpg">
+                                    </a>
+                                    <a href="./assets/img/img3.jpg">
+                                        <img src="./assets/img/img3.jpg">
+                                    </a>
+                                    <a href="./assets/img/img3.jpg">
+                                        <img src="./assets/img/img3.jpg">
+                                    </a>
+                                    <a href="./assets/img/img3.jpg">
+                                        <img src="./assets/img/img3.jpg">
+                                    </a>
+                                    <a href="./assets/img/img3.jpg">
+                                        <img src="./assets/img/img3.jpg">
+                                    </a>
+                                    <a href="./assets/img/img3.jpg">
+                                        <img src="./assets/img/img3.jpg">
+                                    </a>
                                 </div>
                                 <h5><b>Video:</b></h5>
                                 <img class="w-100" src="./assets/img/img3.jpg">
                             </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                        </div>
+                        <div class="col-12 col-lg-4 sidebar">
+                            <h3>USD 560.000</h3>
+                            <div class="row features">
+                                <div class="col-12 col-lg-6">
+                                    <span><i class="fas fa-bed"></i> 3 dormitorios</span>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span><i class="fas fa-bath"></i> 3 baños</span>
+                                </div>
+                            </div>
+                            <div class="row features">
+                                <div class="col-12 col-lg-6">
+                                    <span><i class="fas fa-home"></i> 86 m2</span>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span><i class="fas fa-warehouse"></i> 2 cocheras</span>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <div class="row no-gutters justify-content-center">
+                                    <div class="col-12 col-lg-3 text-center text-lg-right pr-3">
+                                        <img src="./assets/img/img6.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-9">
+                                        <p class="nombre">
+                                            Sergio Perilman <br>
+                                            <span>Asesor Comercial</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <h4 class="text-center">ESTAMOS PARA AYUDARTE A ENCONTRAR EL INMUEBLE PERFECTO</h4>
+                                <input class="mb-3" type="text" name="nombre" placeholder="Nombre">
+                                <input class="mb-3" type="tel" name="telefono" placeholder="Teléfono">
+                                <input class="mb-3" type="email" name="email" placeholder="Email">
+                                <input class="mb-3" type="submit" value="Enviar">
+                                <a class="btn btn2 mb-3" href="#">Imprimir</a>
+                                <div class="share">
+                                    <a href="#">
+                                        <img src="./assets/img/whatsapp.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./assets/img/facebook.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./assets/img/twitter.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./assets/img/gplus.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./assets/img/correo.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./assets/img/messenger.jpg">
+                                    </a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
               </div>
         </section>
         <footer>
-            <div class="container">
+            <div class="container pt-5">
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-md-4 col-lg-3 px-5 px-lg-0 mb-5">
                         <img src="./assets/img/logo.png">
@@ -362,6 +419,7 @@
         <script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
         <script src="./assets/vendors/font-awesome/js/all.min.js"></script>
         <script src="./assets/vendors/slick/slick.min.js"></script>
+        <script src="./assets/vendors/lightgallery/js/lightgallery-all.min.js"></script>
         <script src="./assets/js/scripts.js"></script>
     </body>
 
