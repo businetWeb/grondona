@@ -367,8 +367,8 @@ footer .copyright p {
 
 @media (max-width: 991px) {
   .galeria a {
-    flex-basis: 100%;
-    max-width: 100%;
+    flex-basis: 48%;
+    max-width: 48%;
   }
 }
 
@@ -1269,6 +1269,12 @@ header .bars-toggler .fa-times {
   font-weight: 900;
 }
 
+@media (max-width: 991px) {
+  #inmueble .lista .nav {
+    height: auto;
+  }
+}
+
 #inmueble .sidebar {
   background-color: #fff;
   padding: 20px;
@@ -1424,5 +1430,9 @@ header .bars-toggler .fa-times {
   #contact .sidebar {
     position: relative;
     width: 100%;
+    top: 0;
+    bottom: initial;
+    right: initial;
+    text-align: center;
   }
 }

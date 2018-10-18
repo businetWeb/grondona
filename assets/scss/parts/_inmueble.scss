@@ -35,6 +35,9 @@
                     font-family: 'Font Awesome 5 Free'; font-weight: 900;
                 }
             }
+            @media (max-width: 991px) {
+                height: auto;;
+            }
         }
     }
     .sidebar{
